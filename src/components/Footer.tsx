@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='  bg-slate-950'>
-        <div className='max-w-[80%] mx-auto flex justify-between'>
+        <div className='max-w-[80%] mx-auto flex justify-evenly'>
           <span className=''>&copy; 2021</span>
           <span className=''>Privacy Policy</span>
           <span className=''>Terms of Service</span>
