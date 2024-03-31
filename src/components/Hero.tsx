@@ -9,16 +9,15 @@ const Hero = () => {
             Ben Home Inspection Inc.
           </h1>
           <p className='text-white font-semibold text-xl'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            quo dicta harum dolore quod voluptatum sunt. Debitis officia earum,
-            delectus at, iste magni culpa modi sed iusto exercitationem, eveniet
-            numquam.
+            We have helped hundreds of families across Vancouver area achieve
+            the dream of homeownership, We have built a good name for providing
+            honest , top quality service to our clients.
           </p>
           <a
-            href='#'
-            className='py-2 px-4 bg-blue-600 flex justify-center w-32 font-semibold text-white rounded-md hover:bg-blue-500 transition duration-300 ease-in-out'
+            href='#services'
+            className='py-2 px-4 bg-blue-600 flex justify-center w-52 font-semibold text-white rounded-md hover:bg-blue-500 transition duration-300 ease-in-out'
           >
-            More
+            Check Our Services
           </a>
         </div>
       </div>

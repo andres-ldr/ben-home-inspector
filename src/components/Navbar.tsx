@@ -11,36 +11,46 @@ const Navbar = () => {
             href='#'
             className='px-4 py-2 w-32 transition duration-300 ease-in-out text-center hover:bg-slate-800 hover:text-slate-100'
           >
-            Link 1
+            Home
           </a>
           <a
-            href='#'
+            href='#about'
             className='px-4 py-2 w-32 transition duration-300 ease-in-out text-center hover:bg-slate-800 hover:text-slate-100'
           >
-            Link 2
+            About
           </a>
           <a
-            href='#'
+            href='#services'
             className='px-4 py-2 w-32 transition duration-300 ease-in-out text-center hover:bg-slate-800 hover:text-slate-100'
           >
-            Link 3
+            Services
           </a>
           <a
-            href='#'
+            href='#pricing'
             className='px-4 py-2 w-32 transition duration-300 ease-in-out text-center hover:bg-slate-800 hover:text-slate-100'
           >
-            Link 4
+            Pricing
           </a>
           <a
-            href='#'
+            href='#contact'
             className='px-4 py-2 w-32 transition duration-300 ease-in-out text-center hover:bg-slate-800 hover:text-slate-100'
           >
-            Link 5
+            Contact
           </a>
         </div>
         <div className='flex flex-col gap-1 font-semibold'>
-          <a href='#'>contact@email.com</a>
-          <a href='#'>+1 123 456 789</a>
+          <a
+            href='#'
+            className='hover:text-red-600 transition duration-300 ease-in-out'
+          >
+            contact@email.com
+          </a>
+          <a
+            href='#'
+            className='hover:text-red-600 transition duration-300 ease-in-out'
+          >
+            +1 123 456 789
+          </a>
         </div>
       </nav>
     </header>
