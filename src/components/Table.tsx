@@ -18,27 +18,29 @@ const Table = async () => {
   const { data } = await getFile();
 
   return (
-    <table className='w-3/4'>
-      <thead className='bg-slate-800 text-slate-100 text-xl'>
-        <tr className=''>
-          <th className='py-4'>Type of home</th>
-          <th className='py-4'>Square Footage</th>
-          <th className='py-4'>Fee</th>
-        </tr>
-      </thead>
-      <tbody>
-        {data.map(({ type, footage, price }: DataType, i: number) => (
-          <tr
-            key={i}
-            className='bg-slate-200 hover:bg-slate-300 transition duration-200 ease-in-out font-semibold border-b-2 text-center'
-          >
-            <td className='py-6'>{type}</td>
-            <td className='py-6'>Up to {footage} sqft</td>
-            <td className='py-6'>${price}</td>
+    <>
+      <table className='md:w-3/4'>
+        <thead className='bg-slate-800 text-slate-100 text-sm md:text-xl'>
+          <tr className=''>
+            <th className='py-4'>Type of home</th>
+            <th className='py-4'>Square Footage</th>
+            <th className='py-4'>Fee</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data.map(({ type, footage, price }: DataType, i: number) => (
+            <tr
+              key={i}
+              className='bg-slate-200 hover:bg-slate-300 transition duration-200 ease-in-out font-semibold border-b-2 text-center text-sm md:text-base'
+            >
+              <td className='py-6'>{type}</td>
+              <td className='py-6'>Up to {footage} sqft</td>
+              <td className='py-6'>${price}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 };
 

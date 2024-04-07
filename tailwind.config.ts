@@ -14,6 +14,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         heroImage:
           "linear-gradient(270deg, rgba(0,0,0,0) 10%, rgba(0,0,0,0.8) 80%), url('/hero_image.jpg')",
+        heroImageSmall:
+          "linear-gradient(270deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url('/hero_image.jpg')",
         cityView:
           "radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 50%), url('/city_view.png')",
         simpleHome:

@@ -8,10 +8,10 @@ const Home = () => {
     <main>
       <Hero />
       <section
-        className='max-w-[80%] mx-auto h-[35rem] flex justify-center gap-6
+        className='max-w-[80%] mx-auto sm:h-[35rem] flex flex-col sm:flex-row justify-center gap-6 max-sm:py-24
       '
       >
-        <div className='bg-slate-100 w-72 h-80 -translate-y-20 flex flex-col justify-center items-center py-4 px-8 gap-2 shadow-md text-center'>
+        <div className='bg-slate-100 w-full sm:w-72 h-80 sm:-translate-y-20 flex flex-col justify-center items-center py-4 px-8 gap-2 shadow-md text-center'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 384 512'
@@ -25,7 +25,7 @@ const Home = () => {
             integrity.
           </p>
         </div>
-        <div className='bg-slate-100 w-72 h-80 -translate-y-20 flex flex-col justify-center items-center py-4 px-8 gap-2 shadow-md text-center'>
+        <div className='bg-slate-100 w-full sm:w-72 h-80 sm:-translate-y-20 flex flex-col justify-center items-center py-4 px-8 gap-2 shadow-md text-center'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 512 512'
@@ -38,7 +38,7 @@ const Home = () => {
             With specialized knowledge in all type of mechanical systems
           </p>
         </div>
-        <div className='bg-slate-100 w-72 h-80 -translate-y-20 flex flex-col justify-center items-center py-4 px-8 gap-2 shadow-md'>
+        <div className='bg-slate-100 w-full sm:w-72 h-80 sm:-translate-y-20 flex flex-col justify-center items-center py-4 px-8 gap-2 shadow-md'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 576 512'
@@ -52,9 +52,9 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className='bg-slate-300'>
-        <div className='max-w-[80%] mx-auto flex justify-center gap-10'>
-          <div className='relative -translate-y-32 flex flex-col'>
+      <section className='bg-slate-300 max-sm:py-24'>
+        <div className='max-w-[80%] mx-auto flex flex-col sm:flex-row justify-center gap-10 sm:gap-10'>
+          <div className='relative sm:-translate-y-32 flex flex-col'>
             <Image
               id='about'
               src='/portrait.jpeg'
@@ -74,7 +74,7 @@ const Home = () => {
               <span>License: # 83543</span>
             </div>
           </div>
-          <div className='w-1/2 flex flex-col gap-10 py-48'>
+          <div className='sm:w-1/2 flex flex-col gap-10 sm:py-48'>
             <div>
               <h2 className='font-semibold text-green-900'>Ben Shadbakht</h2>
               <h2 className='text-4xl font-semibold'>About Ben</h2>
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </section>
       <section className='bg-familyBg bg-center bg-no-repeat bg-cover h-[35rem] flex justify-center items-center'>
-        <span className='text-4xl text-slate-100 font-semibold w-1/2 text-center leading-snug'>
+        <span className='text-3xl md:text-4xl text-slate-100 font-semibold w-1/2 text-center leading-snug'>
           Buying a house is a big decision, make it rigth with Ben
         </span>
       </section>
@@ -102,8 +102,8 @@ const Home = () => {
           </span>
           <h2 className='text-5xl font-bold'>Our Services</h2>
         </div>
-        <div className='flex justify-center gap-10'>
-          <div className='w-80 h-80'>
+        <div className='flex flex-col md:flex-row justify-center gap-10'>
+          <div className='md:w-80 md:h-80'>
             <Image
               src='/condo1.jpg'
               alt='townhouse'
@@ -112,7 +112,7 @@ const Home = () => {
               className='shadow-xl h-full w-full object-cover'
             />
           </div>
-          <div className='flex flex-col w-1/2 gap-10'>
+          <div className='flex flex-col md:w-1/2 gap-10'>
             <h3 className='text-3xl font-bold'>Condo Inspection</h3>
             <p>
               The comprehensive service package encompasses a thorough
@@ -136,7 +136,7 @@ const Home = () => {
                 >
                   <path d='M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z' />
                 </svg>
-                <span className='font-semibold'>
+                <span className='font-semibold w-full'>
                   Examined the interior of the condo for any visible damage
                 </span>
               </li>
@@ -169,8 +169,8 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        <div className='flex justify-center gap-10'>
-          <div className='flex flex-col w-1/2 gap-10'>
+        <div className='flex flex-col md:flex-row justify-center gap-10'>
+          <div className='flex flex-col md:w-1/2 gap-10'>
             <h3 className='text-3xl font-bold'>Townhouse Inspection</h3>
             <p>
               An inspection is a meticulous assessment conducted to evaluate the
@@ -189,7 +189,7 @@ const Home = () => {
                 >
                   <path d='M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z' />
                 </svg>
-                <span className='font-semibold'>
+                <span className='font-semibold w-full'>
                   Inspect the structural elements such as: walls, ceilings,
                   floors and roofs.
                 </span>
@@ -236,7 +236,7 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div className='w-80 h-80'>
+          <div className='md:w-80 md:h-80'>
             <Image
               src='/townhouse1.jpg'
               alt='townhouse'
@@ -246,8 +246,8 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className='flex justify-center gap-10'>
-          <div className='w-80 h-80'>
+        <div className='flex flex-col md:flex-row justify-center gap-10'>
+          <div className='md:w-80 md:h-80'>
             <Image
               src='/home.jpg'
               alt='townhouse'
@@ -257,7 +257,7 @@ const Home = () => {
             />
           </div>
 
-          <div className='flex flex-col w-1/2 gap-10'>
+          <div className='flex flex-col md:w-1/2 gap-10'>
             <h3 className='text-3xl font-bold'>House Inspection</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
@@ -286,7 +286,7 @@ const Home = () => {
                 >
                   <path d='M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z' />
                 </svg>
-                <span className='font-semibold'>
+                <span className='font-semibold w-full'>
                   Interior and exterior inspection to identify major issues
                 </span>
               </li>
@@ -310,7 +310,7 @@ const Home = () => {
                 >
                   <path d='M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z' />
                 </svg>
-                <span className='font-semibold'>
+                <span className='font-semibold w-full'>
                   Assesment about the plumbing system
                 </span>
               </li>
@@ -320,24 +320,24 @@ const Home = () => {
       </section>
       <section id='pricing' className='py-24 bg-slate-300'>
         <div className='max-w-[80%] mx-auto flex flex-col items-center gap-24'>
-          <div className='flex flex-col items-center justify-center gap-5'>
+          <div className='flex flex-col items-center justify-center gap-5 text-center'>
             <span className='text-green-900 font-bold'>
               The best prices for the best service
             </span>
-            <h2 className='text-5xl font-bold'>Pricing & Fees</h2>
+            <h2 className='text-3xl md:text-5xl font-bold'>Pricing & Fees</h2>
           </div>
           <Table />
         </div>
       </section>
       <section className='bg-cityView bg-center bg-no-repeat bg-cover h-[35rem] flex justify-center items-center'>
-        <span className='text-4xl text-slate-100 font-semibold w-1/2 text-center'>
+        <span className='text-2xl md:text-4xl text-slate-100 font-semibold md:w-1/2 text-center'>
           Rely on our thorough inspections to reveal all aspects, guaranteeing
           confidence in your forthcoming home purchase
         </span>
       </section>
-      <section id='contact' className='py-24'>
-        <div className='w-[55rem] mx-auto h-96 bg-slate-100 shadow-2xl rounded-lg flex'>
-          <div className='w-1/2 h-full'>
+      <section id='contact' className='py-24 max-w-[80%] mx-auto'>
+        <div className='md:w-[55rem] mx-auto md:h-96 bg-slate-100 shadow-2xl rounded-lg flex'>
+          <div className='md:w-1/2 h-full hidden md:flex'>
             <Image
               src='/blueprint2.jpg'
               alt='Contact'
@@ -347,25 +347,29 @@ const Home = () => {
             />
           </div>
           <div className='flex flex-col py-8 px-10 gap-5'>
-            <h3 className='text-4xl font-bold'>Contact Me</h3>
-            <div className='flex gap-5 mt-10'>
+            <h3 className='text-2xl md:text-4xl font-bold'>Contact Me</h3>
+            <div className='flex flex-wrap gap-5 mt-10'>
               <Image src='/phone.svg' alt='Logo' width={20} height={20} />
-              <span className='text-xl font-semibold'>+1 123 456 789</span>
+              <span className='md:text-xl font-semibold'>
+                +1 (778) 628 9777
+              </span>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex flex-wrap gap-5'>
               <Image src='/envelope.svg' alt='Logo' width={20} height={20} />
-              <span className='text-xl font-semibold'>contact@email.com</span>
+              <span className='md:text-xl font-semibold'>
+                benshad3@gmail.com
+              </span>
             </div>
-            <div className='flex gap-5'>
+            <div className='flex flex-wrap gap-5'>
               <Image
                 src='/location.svg'
                 alt='Location'
                 width={20}
                 height={20}
               />
-              <span className='text-xl font-semibold'>British Columbia</span>
+              <span className='md:text-xl font-semibold'>British Columbia</span>
             </div>
-            <span className='text-xl font-semibold'>
+            <span className='md:text-xl font-semibold'>
               Monday to Friday, from 8:00 to 19:00
             </span>
           </div>

@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <header className='w-full shadow-md py-2 fixed top-0 inset-x-0 bg-slate-100 text-slate-800 z-50'>
       <nav className='max-w-[80%] mx-auto flex justify-between items-center gap-10'>
-        <Image src='/logo.svg' alt='Logo' width={30} height={30} />
-        <div className='flex font-semibold'>
+        <Image src='/golden_logo.png' alt='Logo' width={30} height={30} className='w-10 h-10 md:w-16 md:h-16' />
+        <div className='hidden xl:flex font-semibold'>
           <a
             href='#'
             className='px-4 py-2 w-32 transition duration-300 ease-in-out text-center hover:bg-slate-800 hover:text-slate-100'
@@ -38,7 +38,7 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-        <div className='flex flex-col gap-1 font-semibold'>
+        <div className='hidden xl:flex flex-col gap-1 font-semibold'>
           <a
             href='#'
             className='hover:text-red-600 transition duration-300 ease-in-out'
