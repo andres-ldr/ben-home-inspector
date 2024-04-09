@@ -48,7 +48,7 @@ const Home = () => {
           </svg>
           <span className='text-xl font-semibold'>Best price</span>
           <p className='text-sm text-center'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Affordable prices for the best service in the industry
           </p>
         </div>
       </section>
@@ -170,6 +170,15 @@ const Home = () => {
           </div>
         </div>
         <div className='flex flex-col md:flex-row justify-center gap-10'>
+        <div className='w-full h-80 md:hidden'>
+            <Image
+              src='/townhouse1.jpg'
+              alt='townhouse-inspection'
+              width={400}
+              height={400}
+              className='w-full h-full object-cover shadow-xl'
+            />
+          </div>
           <div className='flex flex-col md:w-1/2 gap-10'>
             <h3 className='text-3xl font-bold'>Townhouse Inspection</h3>
             <p>
@@ -236,10 +245,10 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          <div className='md:w-80 md:h-80'>
+          <div className='hidden md:flex md:w-80 md:h-80'>
             <Image
               src='/townhouse1.jpg'
-              alt='townhouse'
+              alt='townhouse-inspection'
               width={400}
               height={400}
               className='w-full h-full object-cover shadow-xl'
@@ -250,7 +259,7 @@ const Home = () => {
           <div className='md:w-80 md:h-80'>
             <Image
               src='/home.jpg'
-              alt='townhouse'
+              alt='house-inspection'
               width={400}
               height={400}
               className='w-full h-full object-cover shadow-xl'

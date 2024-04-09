@@ -38,18 +38,18 @@ const Navbar = () => {
             Contact
           </a>
         </div>
-        <div className='hidden xl:flex flex-col gap-1 font-semibold'>
+        <div className='flex flex-col gap-1 font-semibold text-sm md:text-base'>
           <a
             href='#'
             className='hover:text-red-600 transition duration-300 ease-in-out'
           >
-            contact@email.com
+            benshad3@gmail.com
           </a>
           <a
             href='#'
             className='hover:text-red-600 transition duration-300 ease-in-out'
           >
-            +1 123 456 789
+            +1 (778) 628 9777
           </a>
         </div>
       </nav>

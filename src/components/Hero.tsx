@@ -15,7 +15,7 @@ const Hero = () => {
           </p>
           <a
             href='#services'
-            className='py-2 px-4 bg-emerald-600 flex justify-center w-32 md:w-52 font-semibold text-white rounded-md hover:bg-emerald-500 transition duration-300 ease-in-out'
+            className='py-2 px-4 bg-emerald-600 flex justify-center w-full sm:w-52 font-semibold text-white rounded-md hover:bg-emerald-500 transition duration-300 ease-in-out'
           >
             Check Our Services
           </a>
