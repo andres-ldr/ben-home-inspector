@@ -8,7 +8,7 @@ const Home = () => {
     <main>
       <Hero />
       <section
-        className='max-w-[80%] mx-auto sm:h-[30rem] flex flex-col sm:flex-row justify-start items-center sm:items-start gap-6 py-24
+        className='max-w-[80%] mx-auto sm:h-[30rem] flex flex-col sm:flex-row justify-center items-center sm:items-start gap-6 py-24
       '
       >
         <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-start items-center py-4 px-8 gap-4 shadow-md text-center'>
