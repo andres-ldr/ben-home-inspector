@@ -6,9 +6,11 @@ const Footer = () => {
     <footer className='bg-slate-800 text-slate-100'>
       <div className='max-w-[80%] mx-auto py-24 flex flex-col justify-between gap-5'>
         <div className='flex flex-col gap-4 md:flex-row xl:justify-evenly'>
-          <div className='flex flex-col gap-5'>
-            <Image src='/golden_logo.png' width={50} height={50} alt='logo' />
-            <span className='text-2xl font-semibold'>About Ben</span>
+          <div className='flex flex-col gap-5 md:w-1/4'>
+            <div className='flex items-center'>
+              <Image src='/golden_logo.png' width={50} height={50} alt='logo' />
+              <span className='text-2xl font-semibold'>About Ben</span>
+            </div>
             <p>
               We have helped hundreds of families across Vancouver area achieve
               the dream of homeownership, We have built a good name for

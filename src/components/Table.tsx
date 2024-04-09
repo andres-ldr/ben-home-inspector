@@ -19,7 +19,7 @@ const Table = async () => {
 
   return (
     <>
-      <table className='md:w-3/4'>
+      <table className='w-full'>
         <thead className='bg-slate-800 text-slate-100 text-sm md:text-xl'>
           <tr className=''>
             <th className='py-4'>Type of home</th>
