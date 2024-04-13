@@ -11,7 +11,7 @@ const Home = () => {
         className='max-w-[80%] mx-auto sm:h-[30rem] flex flex-col sm:flex-row justify-center items-center sm:items-start gap-6 py-24
       '
       >
-        <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-start items-center py-4 px-8 gap-4 shadow-md text-center'>
+        <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-center items-center py-4 px-8 gap-4 shadow-md text-center'>
           <div className='w-10 h-10'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -27,7 +27,7 @@ const Home = () => {
             integrity.
           </p>
         </div>
-         <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-start items-center py-4 px-8 gap-4 shadow-md text-center'>
+        <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-center items-center py-4 px-8 gap-4 shadow-md text-center'>
           <div className='w-10 h-10'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -42,7 +42,7 @@ const Home = () => {
             With specialized knowledge in all type of mechanical systems
           </p>
         </div>
-        <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-start items-center py-4 px-8 gap-4 shadow-md text-center'>
+        <div className='bg-slate-100 sm:w-72 sm:h-80 sm:-translate-y-44 flex flex-col justify-center items-center py-4 px-8 gap-4 shadow-md text-center'>
           <div className='w-10 h-10'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -111,7 +111,7 @@ const Home = () => {
         <div className='flex flex-col md:flex-row justify-center gap-10'>
           <div className='h-60 md:w-80 md:h-80'>
             <Image
-              src='/condo1.jpg'
+              src='/condo4.jpg'
               alt='townhouse'
               width={200}
               height={200}
@@ -264,7 +264,7 @@ const Home = () => {
         <div className='flex flex-col md:flex-row justify-center gap-10'>
           <div className='h-60 md:w-80 md:h-80'>
             <Image
-              src='/home.jpg'
+              src='/home3.jpg'
               alt='house-inspection'
               width={400}
               height={400}

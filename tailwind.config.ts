@@ -16,8 +16,7 @@ const config: Config = {
           "linear-gradient(270deg, rgba(0,0,0,0) 10%, rgba(0,0,0,0.8) 80%), url('/hero_image.jpg')",
         heroImageSmall:
           "linear-gradient(270deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url('/hero_image.jpg')",
-        cityView:
-          "radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 50%), url('/city_view.png')",
+        cityView: "radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 70%), url('/city_view.png')",
         simpleHome:
           'linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,1) 100%), url("/home.jpg")',
         familyBg:

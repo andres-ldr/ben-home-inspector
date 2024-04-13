@@ -37,7 +37,7 @@ const Footer = () => {
           <div className='flex flex-col gap-5'>
             <span className='text-2xl font-semibold'>Contact</span>
             <div className='flex flex-col gap-2'>
-              <div className='font-bold flex gap-4'>
+              <div className='items-center font-bold flex gap-4'>
                 <div className='w-4 h-4'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
                 <span> +1 (778) 628 9777 </span>
               </div>
-              <div className='font-bold flex gap-4'>
+              <div className='items-center font-bold flex gap-4'>
                 <div className='w-4 h-4'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
