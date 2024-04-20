@@ -1,22 +1,6 @@
 import React from 'react';
-import { promises as fs } from 'fs';
-
-type DataType = {
-  type: string;
-  footage: string;
-  price: string;
-};
 
 const Table = async () => {
-  const getFile = async () => {
-    const file = await fs.readFile(
-      process.cwd() + '/src/data/prices.json',
-      'utf8'
-    );
-    return JSON.parse(file);
-  };
-  const { data } = await getFile();
-
   return (
     <>
       <table className='w-full'>
@@ -28,16 +12,43 @@ const Table = async () => {
           </tr>
         </thead>
         <tbody>
-          {data.map(({ type, footage, price }: DataType, i: number) => (
-            <tr
-              key={i}
-              className='bg-slate-200 hover:bg-slate-300 transition duration-200 ease-in-out font-semibold border-b-2 text-center text-sm md:text-base'
-            >
-              <td className='py-6'>{type}</td>
-              <td className='py-6'>Up to {footage} sqft</td>
-              <td className='py-6'>${price}</td>
-            </tr>
-          ))}
+          <tr className='bg-slate-200 font-semibold border-b-2 text-center text-sm md:text-base '>
+            <td className='py-6' rowSpan={2}>
+              Condo
+            </td>
+            <td className='py-6'>Up to 1200 sqft</td>
+            <td className='py-6'>$ 320.00</td>
+          </tr>
+          <tr className='bg-slate-200 font-semibold border-b-2 text-center text-sm md:text-base'>
+            <td className='py-6'>Up to 2000 sqft</td>
+            <td className='py-6'>$ 380.00</td>
+          </tr>
+          <tr className='bg-slate-200 font-semibold border-b-2 text-center text-sm md:text-base'>
+            <td className='py-6' rowSpan={2}>
+              Townhouse
+            </td>
+            <td className='py-6'>Up to 1500 sqft</td>
+            <td className='py-6'>$ 420.00</td>
+          </tr>
+          <tr className='bg-slate-200  font-semibold border-b-2 text-center text-sm md:text-base'>
+            <td className='py-6'>Up to 2000 sqft</td>
+            <td className='py-6'>$ 480.00</td>
+          </tr>
+          <tr className='bg-slate-200 font-semibold border-b-2 text-center text-sm md:text-base'>
+            <td className='py-6' rowSpan={3}>
+              House
+            </td>
+            <td className='py-6'>Up to 2500 sqft</td>
+            <td className='py-6'>$ 600.00</td>
+          </tr>
+          <tr className='bg-slate-200 font-semibold border-b-2 text-center text-sm md:text-base'>
+            <td className='py-6'>Up to 3000 sqft</td>
+            <td className='py-6'>$ 650.00</td>
+          </tr>
+          <tr className='bg-slate-200 font-semibold border-b-2 text-center text-sm md:text-base'>
+            <td className='py-6'>Up to 3500 sqft</td>
+            <td className='py-6'>$ 700.00</td>
+          </tr>
         </tbody>
       </table>
     </>
