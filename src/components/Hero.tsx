@@ -1,11 +1,20 @@
 'use client';
+import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className='bg-heroImageSmall xl:bg-heroImage bg-center bg-cover bg-no-repeat w-screen h-screen flex justify-start items-center'>
-      <div className='w-full max-w-[80%] mx-auto'>
+    <section className='relative w-screen h-screen flex justify-start items-center'>
+      <Image
+        src='/hero_image.jpg'
+        alt='hero'
+        layout='fill'
+        objectFit='cover'
+        className='absolute inset-0 w-full h-full'
+      />
+      <div className='absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-75'></div>
+      <div className='w-full max-w-[80%] mx-auto z-20'>
         <div className='md:w-1/2  flex flex-col gap-10'>
           <motion.h1
             className='text-2xl xl:text-6xl text-white font-bold'
@@ -18,7 +27,7 @@ const Hero = () => {
               opacity: 0,
             }}
             transition={{
-              duration: 1,
+              duration: 0.5,
             }}
           >
             Ben Home Inspection Inc.
@@ -43,7 +52,7 @@ const Hero = () => {
           </motion.p>
           <motion.a
             href='#services'
-            className='py-2 px-4 bg-emerald-600 flex justify-center w-full sm:w-52 font-semibold text-white rounded-md hover:bg-emerald-500 transition duration-300 ease-in-out'
+            className='py-2 px-4 bg-emerald-600 flex justify-center w-full sm:w-52 font-semibold text-white rounded-md hover:bg-emerald-500'
             animate={{
               y: 0,
               opacity: 1,
