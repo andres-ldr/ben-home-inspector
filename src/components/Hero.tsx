@@ -9,9 +9,11 @@ const Hero = () => {
       <Image
         src='/hero_image.jpg'
         alt='hero'
-        layout='fill'
-        objectFit='cover'
-        className='absolute inset-0 w-full h-full'
+        width={1920}
+        height={1080}
+        // layout='fill'
+        // objectFit='cover'
+        className='absolute inset-0 w-full h-full object-cover'
       />
       <div className='absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-75'></div>
       <div className='w-full max-w-[80%] mx-auto z-20'>
