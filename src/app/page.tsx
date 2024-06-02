@@ -385,7 +385,7 @@ const Home = () => {
               <span className='md:text-xl font-semibold'>British Columbia</span>
             </div>
             <span className='md:text-xl font-semibold'>
-              Monday to Friday, from 8:00 to 19:00
+              Monday to Friday, from 8:00 am to 7:00 pm
             </span>
           </div>
         </div>

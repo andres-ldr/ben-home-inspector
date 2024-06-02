@@ -61,7 +61,7 @@ const Footer = () => {
                 </div>
                 <span>benshad3@gmail.com</span>
               </div>
-              <span>From Monday to Friday, 8:00 am - 19:00 pm</span>
+              <span>From Monday to Friday, 8:00 am - 7:00 pm</span>
             </div>
           </div>
         </div>
